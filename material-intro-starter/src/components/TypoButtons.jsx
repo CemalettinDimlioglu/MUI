@@ -1,9 +1,9 @@
-import { Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import { color } from "@mui/system";
 
 const TypoButtons = () => {
   return (
-    <div>
+    <Container maxWidth="sm" >
       <Typography variant="h4" align="center" mt={3} color="forestgreen">
         MUI Typo
       </Typography>
@@ -19,7 +19,7 @@ const TypoButtons = () => {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit nisi exercitationem ratione voluptates, eos quaerat corrupti, facere veniam, quia ut obcaecati similique dolorem saepe velit.
 
       </Typography>
-    </div>
+    </Container>
   );
 };
 
