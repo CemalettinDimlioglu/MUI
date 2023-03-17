@@ -1,9 +1,11 @@
-import { Stack, Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import TextField from "@mui/material/TextField";
+import { useState } from "react";
 
 const TextFieldComp = () => {
+     const [error, setError] = useState(false)
   return (
-    <div>
+    <Container maxWidth="sm" >
       <Typography variant="h4" color="secondary.dark" align="center" m={4}>
         TEXT FIELD
       </Typography>
@@ -15,8 +17,8 @@ const TextFieldComp = () => {
         placeholder="Enter Your Email"
         margin="normal"
         required 
-        error={false}
-        helperText="Incorrect email format"
+        error={true}
+        helperText={error && "Incorrect email format"}
       />
       <TextField
         id="password"
@@ -29,7 +31,7 @@ const TextFieldComp = () => {
      
       />
       <TextField id="standard-basic" label="Standard" variant="standard" />
-    </div>
+    </Container>
   );
 };
 
