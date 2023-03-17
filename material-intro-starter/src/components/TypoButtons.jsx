@@ -15,6 +15,10 @@ const TypoButtons = () => {
        >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, impedit atque! Dicta sequi est magni incidunt adipisci. Ipsum architecto rerum eveniet sunt reprehenderit. Perferendis, veniam ducimus. Adipisci alias officiis quo.
       </Typography>
+      <Typography variant="button" >
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit nisi exercitationem ratione voluptates, eos quaerat corrupti, facere veniam, quia ut obcaecati similique dolorem saepe velit.
+
+      </Typography>
     </div>
   );
 };
