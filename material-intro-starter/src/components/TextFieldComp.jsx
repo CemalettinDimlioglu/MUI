@@ -14,7 +14,9 @@ const TextFieldComp = () => {
         variant="outlined"
         placeholder="Enter Your Email"
         margin="normal"
-        required
+        required 
+        error={false}
+        helperText="Incorrect email format"
       />
       <TextField
         id="password"
@@ -24,6 +26,7 @@ const TextFieldComp = () => {
         placeholder="Enter Password"
         margin="normal"
         required
+     
       />
       <TextField id="standard-basic" label="Standard" variant="standard" />
     </div>
