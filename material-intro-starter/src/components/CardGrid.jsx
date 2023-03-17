@@ -11,6 +11,8 @@ export default function CardGrid() {
       <Typography variant="h4" align="center" m={3} color="red">
         Card Grid
       </Typography>
+      <Button color="error" variant="contained" >Deneme</Button>
+
       <Grid container justifyContent="center" alignItems="center" spacing={3}>
         {data.map(({ id, name, img, text }) => (
           <Grid item key={id} xs={12} sm={6} md={4}>

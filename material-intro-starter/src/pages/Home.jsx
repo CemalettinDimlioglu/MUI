@@ -3,7 +3,7 @@ import CardGrid from "../components/CardGrid";
 import TextFieldComp from "../components/TextFieldComp";
 import TypoButtons from "../components/TypoButtons";
 import { createTheme, ThemeProvider } from "@mui/material";
-import { pink } from "@mui/material/colors";
+import { deepOrange, pink } from "@mui/material/colors";
 
 const Home = () => {
   const theme = createTheme({
@@ -13,6 +13,9 @@ palette :{
   },
   secondary:{
     main:pink[500],
+  },
+  error:{
+    main:deepOrange[500],
   }
 },
   })
