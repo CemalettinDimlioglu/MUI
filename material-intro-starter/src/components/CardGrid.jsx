@@ -3,6 +3,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions, Grid } from "@mui/material";
+import  data from "../data"
 
 export default function CardGrid() {
   return ( 
@@ -17,10 +18,11 @@ export default function CardGrid() {
     
         Card Grid
       </Typography>
-     
     <Grid container>
-
-      <Card sx={{ maxWidth: 345 }}>
+     {data.map(()=>{
+    return (
+     <Grid item >
+ <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
           <CardMedia
             component="img"
@@ -44,7 +46,14 @@ export default function CardGrid() {
           </Button>
         </CardActions>
       </Card>
+
+     </Grid>
+    )
+
+     })}
     </Grid>
+
+     
       </>
   );
 }
