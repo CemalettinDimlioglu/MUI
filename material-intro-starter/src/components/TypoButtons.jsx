@@ -1,4 +1,4 @@
-import { Box, Button, Container, Typography } from "@mui/material";
+import { Box, Button, Container, Stack, Typography } from "@mui/material";
 import { color } from "@mui/material";
 
 const TypoButtons = () => {
@@ -25,15 +25,39 @@ const TypoButtons = () => {
           veniam, quia ut obcaecati similique dolorem saepe velit.
         </Typography>
       </Container>
-      <Container  >
-      <Box sx={{ marginTop: "1rem", display: "flex", justifyContent: "center", gap: 2}}>
-       <Button variant="text" color="warning">Text</Button>
-        <Button variant="contained" color="error">Contained</Button>
-        <Button variant="outlined" color="secondary">Outlined</Button>
-        <Button variant="outlined"  >Primary</Button>
+      <Container>
+        <Box
+          sx={{
+            marginTop: "1rem",
+            display: "flex",
+            justifyContent: "center",
+            gap: 2,
+          }}
+        >
+          <Button variant="text" color="warning">
+            Text
+          </Button>
+          <Button variant="contained" color="error">
+            Contained
+          </Button>
+          <Button variant="outlined" color="secondary">
+            Outlined
+          </Button>
+          <Button variant="outlined">Primary</Button>
         </Box>
-
-       
+        <Stack
+          direction={{ xs: "column", sm: "row" }}
+          spacing={{ xs: 1, sm: 2, md: 4 }}
+          justifyContent="center"
+         mt={2}
+        >
+          <Button variant="text" color="error">
+            Text
+          </Button>
+          <Button variant="contained">Contained</Button>
+          <Button variant="outlined">Outlined</Button>
+          <Button variant="outlined">Primary</Button>
+        </Stack>
       </Container>
     </>
   );
